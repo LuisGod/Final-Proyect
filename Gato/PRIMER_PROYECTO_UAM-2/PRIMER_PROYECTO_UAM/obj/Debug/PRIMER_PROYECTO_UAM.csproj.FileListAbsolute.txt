@@ -163,3 +163,4 @@ C:\Users\Michael\Desktop\Final-Proyect\Gato\PRIMER_PROYECTO_UAM-2\PRIMER_PROYECT
 C:\Users\Michael\Desktop\Final-Proyect\Gato\PRIMER_PROYECTO_UAM-2\PRIMER_PROYECTO_UAM\obj\Debug\PRIMER_PROYECTO_UAM.Elimina_Ruta.resources
 C:\Users\Luis1990\Desktop\Final-Proyect\Gato\PRIMER_PROYECTO_UAM-2\PRIMER_PROYECTO_UAM\obj\Debug\PRIMER_PROYECTO_UAM.Agrega_Ruta.resources
 C:\Users\Luis1990\Desktop\Final-Proyect\Gato\PRIMER_PROYECTO_UAM-2\PRIMER_PROYECTO_UAM\obj\Debug\PRIMER_PROYECTO_UAM.Elimina_Ruta.resources
+C:\Users\Luis1990\Desktop\Final-Proyect\Gato\PRIMER_PROYECTO_UAM-2\PRIMER_PROYECTO_UAM\obj\Debug\PRIMER_PROYECTO_UAM.ListaSolicitudes.resources

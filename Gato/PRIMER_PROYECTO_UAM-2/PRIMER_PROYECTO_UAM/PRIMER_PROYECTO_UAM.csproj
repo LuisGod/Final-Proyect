@@ -99,6 +99,12 @@
     </Compile>
     <Compile Include="GeneroBE.cs" />
     <Compile Include="GeneroController.cs" />
+    <Compile Include="ListaSolicitudes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSolicitudes.Designer.cs">
+      <DependentUpon>ListaSolicitudes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Monto_Conductores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSolicitudes.resx">
+      <DependentUpon>ListaSolicitudes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Monto_Conductores.resx">
       <DependentUpon>Monto_Conductores.cs</DependentUpon>

@@ -48,6 +48,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.numedad = new System.Windows.Forms.NumericUpDown();
             this.picfoto = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.numedad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfoto)).BeginInit();
             this.SuspendLayout();
@@ -157,7 +158,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Coral;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(293, 364);
+            this.button1.Location = new System.Drawing.Point(341, 362);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(199, 35);
             this.button1.TabIndex = 12;
@@ -169,7 +170,7 @@
             // 
             this.btnbuscarfoto.BackColor = System.Drawing.Color.Coral;
             this.btnbuscarfoto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnbuscarfoto.Location = new System.Drawing.Point(293, 121);
+            this.btnbuscarfoto.Location = new System.Drawing.Point(341, 119);
             this.btnbuscarfoto.Name = "btnbuscarfoto";
             this.btnbuscarfoto.Size = new System.Drawing.Size(199, 31);
             this.btnbuscarfoto.TabIndex = 13;
@@ -179,14 +180,15 @@
             // 
             // txtexaminar
             // 
-            this.txtexaminar.BackColor = System.Drawing.SystemColors.Window;
+            this.txtexaminar.BackColor = System.Drawing.Color.Blue;
             this.txtexaminar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtexaminar.Enabled = false;
             this.txtexaminar.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtexaminar.Location = new System.Drawing.Point(448, 296);
+            this.txtexaminar.Location = new System.Drawing.Point(503, 194);
             this.txtexaminar.Name = "txtexaminar";
             this.txtexaminar.Size = new System.Drawing.Size(10, 20);
             this.txtexaminar.TabIndex = 15;
+            this.txtexaminar.Text = ".";
             this.txtexaminar.Visible = false;
             // 
             // label6
@@ -241,15 +243,25 @@
             // 
             // picfoto
             // 
+            this.picfoto.BackColor = System.Drawing.Color.Blue;
             this.picfoto.BackgroundImage = global::PRIMER_PROYECTO_UAM.Properties.Resources.contact;
             this.picfoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picfoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picfoto.Location = new System.Drawing.Point(293, 158);
+            this.picfoto.Location = new System.Drawing.Point(341, 156);
             this.picfoto.Name = "picfoto";
             this.picfoto.Size = new System.Drawing.Size(199, 200);
             this.picfoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picfoto.TabIndex = 14;
             this.picfoto.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(29, 96);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(269, 330);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "CLIENTES";
             // 
             // Form1
             // 
@@ -277,6 +289,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Nombre);
             this.Controls.Add(this.label8);
+            this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "REGISTRAR CLIENTES";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -309,6 +322,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.NumericUpDown numedad;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

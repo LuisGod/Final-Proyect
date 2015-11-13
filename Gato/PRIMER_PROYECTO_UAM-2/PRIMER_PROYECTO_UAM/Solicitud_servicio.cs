@@ -99,7 +99,7 @@ namespace PRIMER_PROYECTO_UAM
         public void verconductor() {
             Conexion myconexion = new Conexion();
             SqlConnection conexion = myconexion.CreateConnection();
-            string sql = "Select *from Conductor where DNI='" + txtcedula.Text + "'";
+            string sql = "Select *from Conductor where DNI='" + txtcedulacond.Text + "'";
             SqlCommand comando = new SqlCommand(sql, conexion);
             conexion.Open();
 
@@ -108,20 +108,20 @@ namespace PRIMER_PROYECTO_UAM
             if (leer.Read() == true)
             {
 
-                txtnombre.Text = leer["NOMBRES"].ToString();
+                txtnombrecond.Text = leer["NOMBRES"].ToString();
                 txtcolor.Text = leer["COLOR"].ToString();
                 txtplaca.Text = leer["PLACA"].ToString();
-                tapellidos.Text = leer["APELLIDOS"].ToString();
+                tapellidocond.Text = leer["APELLIDOS"].ToString();
 
             }
             else
             {
                 MessageBox.Show("No se encontro al conductor");
 
-                txtnombre.Text = "";
+                txtnombrecond.Text = "";
                 txtcolor.Text = "";
                 txtplaca.Text = "";
-                tapellidos.Text = "";
+                tapellidocond.Text = "";
             }
             conexion.Close();
             
@@ -142,7 +142,7 @@ namespace PRIMER_PROYECTO_UAM
             {
 
                 txtname.Text = leer["NOMBRES"].ToString();
-                txtapellido.Text = leer["APELLIDOS"].ToString();
+                txtapellidocliente.Text = leer["APELLIDOS"].ToString();
               
 
             }
@@ -150,7 +150,7 @@ namespace PRIMER_PROYECTO_UAM
             {
                 MessageBox.Show("No se encontro al cliente");
 
-                txtnombre.Text = "";
+                txtnombrecond.Text = "";
                 txtcolor.Text = "";
                 txtplaca.Text = "";
             }
@@ -183,6 +183,41 @@ namespace PRIMER_PROYECTO_UAM
         private void button2_Click(object sender, EventArgs e)
         {
             calculodolares();
+        }
+
+        private void btnservicio_Click(object sender, EventArgs e)
+        {
+            bool result;
+            SolicitudBE  ing_solicitud= new SolicitudBE();
+            ing_solicitud.NOMBRE_CONDUCTOR = txtnombrecond.Text;
+            ing_solicitud.CED_CONDUCTOR = txtcedulacond.Text;
+            ing_solicitud.APELLIDO_CONDUCTOR = tapellidocond.Text;
+            ing_solicitud.PLACA = txtplaca.Text;
+            ing_solicitud.COLOR = txtcolor.Text;
+            ing_solicitud.CED_CLIENTE = txtcedulacliente.Text;
+            ing_solicitud.NOMBRE_CLIENTE = txtname.Text;
+            ing_solicitud.APELLIDOS_CLIENTE = txtapellidocliente.Text;
+            ing_solicitud.RUTA = cmbruta.Text;
+            ing_solicitud.MONTO = txtmonto.Text;
+
+            SolicitudController controller = new SolicitudController();
+            if (result = controller.REGISTRAR_SERVICIO(ing_solicitud))
+            {
+                MessageBox.Show("!!!!Datos almacenados correctamente!!!!");
+            }
+            else
+            {
+                MessageBox.Show("La inserción fallo");
+            }
+            
+            
+        }
+
+        private void btnlista_Click(object sender, EventArgs e)
+        {
+            ListaSolicitudes frmlista = new ListaSolicitudes();
+            frmlista.ShowDialog();
+
         }
     }
 }
