@@ -35,11 +35,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnrgscondu = new System.Windows.Forms.Button();
             this.buttonELIMCOND = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.buttonREGISTRUT = new System.Windows.Forms.Button();
             this.buttonELIMRUT = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.btnsolicitud = new System.Windows.Forms.Button();
+=======
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,19 +124,6 @@
             this.buttonELIMCOND.UseVisualStyleBackColor = false;
             this.buttonELIMCOND.Click += new System.EventHandler(this.buttonELIMCOND_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox1.Location = new System.Drawing.Point(3, -8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 93);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Coral;
@@ -156,6 +146,7 @@
             this.buttonREGISTRUT.TabIndex = 10;
             this.buttonREGISTRUT.Text = "REGISTRAR RUTAS ";
             this.buttonREGISTRUT.UseVisualStyleBackColor = false;
+            this.buttonREGISTRUT.Click += new System.EventHandler(this.buttonREGISTRUT_Click);
             // 
             // buttonELIMRUT
             // 
@@ -167,6 +158,20 @@
             this.buttonELIMRUT.TabIndex = 11;
             this.buttonELIMRUT.Text = "ELIMINAR RUTAS";
             this.buttonELIMRUT.UseVisualStyleBackColor = false;
+            this.buttonELIMRUT.Click += new System.EventHandler(this.buttonELIMRUT_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox1.Location = new System.Drawing.Point(3, -8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 93);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnsolicitud
             // 

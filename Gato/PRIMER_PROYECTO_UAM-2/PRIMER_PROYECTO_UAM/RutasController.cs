@@ -10,7 +10,9 @@ namespace PRIMER_PROYECTO_UAM
     class RutasController
     {
 
-        public bool REGISTRARUTAS(RutasBE ruta)
+        //metodos para agregar una ruta---------------------------------------------------------
+
+        public bool AgregaRuta(RutasBE RutaAgrega)
         {
             bool result = false;
             try
@@ -19,11 +21,13 @@ namespace PRIMER_PROYECTO_UAM
                 SqlConnection conexion = myConnection.CreateConnection();
                 SqlCommand comando = myConnection.CreateCommand(conexion);
 
+
                 comando.CommandText = "REGISTRA_RUTAS";
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.AddWithValue("@RUTA", ruta.RUTA);
-                comando.Parameters.AddWithValue("@DISTANCIAKM", ruta.DISTANCIAKM);
-
+                comando.Parameters.AddWithValue("@RUTA", RutaAgrega.Ruta);
+                comando.Parameters.AddWithValue("@DISTANCIAKM", RutaAgrega.Distanciakm);
+                comando.Parameters.AddWithValue("@MONTO", RutaAgrega.Monto);
+                
 
                 conexion.Open();
                 comando.ExecuteNonQuery();
@@ -39,42 +43,102 @@ namespace PRIMER_PROYECTO_UAM
         }
 
 
-        public List<RutasBE> VER_RUTA()
+        public List<RutasBE> Agregarut()
         {
-            List<RutasBE> listResult = new List<RutasBE>();
+            RutasBE rutasBE;
+            List<RutasBE> listaResult = new List<RutasBE>();
+
+            Conexion myConnection = new Conexion();
+            SqlConnection conexion = myConnection.CreateConnection();
+            SqlCommand comando = myConnection.CreateCommand(conexion);
+            SqlDataReader rrutas;
+
+            comando.CommandText = "REGISTRA_RUTAS";
+            comando.CommandType = CommandType.StoredProcedure;
+
+            conexion.Open();
+
+            rrutas = comando.ExecuteReader();
+            while (rrutas.Read())
+            {
+                rutasBE = new RutasBE();
+
+                rutasBE.Ruta = rrutas["RUTA"].ToString();
+                rutasBE.Distanciakm = rrutas["DISTANCIAKM"].ToString();
+                rutasBE.Monto = rrutas["MONTO"].ToString();
+
+                listaResult.Add(rutasBE);
+
+            }
+
+            conexion.Close();
+
+            return listaResult;
+        }
+
+        //metodos para eliminar una ruta ---------------------------------------------------------------
+
+        public bool EliminaRuta(RutasBE RutaElimina)
+        {
+            bool result = false;
             try
             {
                 Conexion myConnection = new Conexion();
                 SqlConnection conexion = myConnection.CreateConnection();
                 SqlCommand comando = myConnection.CreateCommand(conexion);
-                SqlDataReader inforutaReader;
 
-                comando.CommandText = "VER_RUTA";
+
+
+                comando.CommandText = "DESACTIVA_RUTA";
                 comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.AddWithValue("@RUTA", RutaElimina.Ruta);
+
+
 
                 conexion.Open();
-                inforutaReader = comando.ExecuteReader();
-
-                while (inforutaReader.Read())
-                {
-                    RutasBE RUTA = new RutasBE();
-
-                    RUTA.RUTA = inforutaReader["RUTA"].ToString();
-                    RUTA.DISTANCIAKM = Convert.ToInt32(inforutaReader["DISTANCIAKM"]);
-
-
-                    listResult.Add(RUTA);
-                }
-
+                comando.ExecuteNonQuery();
                 conexion.Close();
+                result = true;
             }
             catch (SqlException e)
             {
-
+                //insert error in a log
+                result = false;
             }
-            return listResult;
+            return result;
         }
 
+        public List<RutasBE> Eliminarut()
+        {
+            RutasBE rutasBE;
+            List<RutasBE> listaResult = new List<RutasBE>();
 
+            Conexion myConnection = new Conexion();
+            SqlConnection conexion = myConnection.CreateConnection();
+            SqlCommand comando = myConnection.CreateCommand(conexion);
+            SqlDataReader rrrutas;
+
+            comando.CommandText = "DESACTIVA_RUTA";
+            comando.CommandType = CommandType.StoredProcedure;
+
+            conexion.Open();
+
+            rrrutas = comando.ExecuteReader();
+            while (rrrutas.Read())
+            {
+                rutasBE = new RutasBE();
+                rutasBE.Ruta = rrrutas["RUTA"].ToString();
+
+
+
+                listaResult.Add(rutasBE);
+
+            }
+
+            conexion.Close();
+
+            return listaResult;
+        }
+       
     }
 }

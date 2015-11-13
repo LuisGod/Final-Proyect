@@ -158,4 +158,9 @@ C:\Users\Michael\Desktop\Final-Proyect\Gato\PRIMER_PROYECTO_UAM-2\PRIMER_PROYECT
 C:\Users\Michael\Desktop\Final-Proyect\Gato\PRIMER_PROYECTO_UAM-2\PRIMER_PROYECTO_UAM\obj\Debug\PRIMER_PROYECTO_UAM.Properties.Resources.resources
 C:\Users\Michael\Desktop\Final-Proyect\Gato\PRIMER_PROYECTO_UAM-2\PRIMER_PROYECTO_UAM\obj\Debug\PRIMER_PROYECTO_UAM.Ver_Eliminar.resources
 C:\Users\Michael\Desktop\Final-Proyect\Gato\PRIMER_PROYECTO_UAM-2\PRIMER_PROYECTO_UAM\obj\Debug\PRIMER_PROYECTO_UAM.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\Luis1990\Desktop\Final-Proyect\Gato\PRIMER_PROYECTO_UAM-2\PRIMER_PROYECTO_UAM\obj\Debug\PRIMER_PROYECTO_UAM.Solicitud_servicio.resources
+=======
+C:\Users\Michael\Desktop\Final-Proyect\Gato\PRIMER_PROYECTO_UAM-2\PRIMER_PROYECTO_UAM\obj\Debug\PRIMER_PROYECTO_UAM.Agrega_Ruta.resources
+C:\Users\Michael\Desktop\Final-Proyect\Gato\PRIMER_PROYECTO_UAM-2\PRIMER_PROYECTO_UAM\obj\Debug\PRIMER_PROYECTO_UAM.Elimina_Ruta.resources
+>>>>>>> origin/master
