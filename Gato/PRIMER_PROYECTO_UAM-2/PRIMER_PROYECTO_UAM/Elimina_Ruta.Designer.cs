@@ -64,6 +64,7 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Desactivar Ruta";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // buttonDesac
             // 
@@ -104,6 +105,7 @@
             this.Controls.Add(this.label2);
             this.Name = "Elimina_Ruta";
             this.Text = "Elimina_Ruta";
+            this.Load += new System.EventHandler(this.Elimina_Ruta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

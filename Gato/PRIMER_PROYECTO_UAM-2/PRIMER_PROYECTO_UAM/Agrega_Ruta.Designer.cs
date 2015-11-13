@@ -113,6 +113,7 @@
             this.buttonBuscRut.TabIndex = 7;
             this.buttonBuscRut.Text = "Buscar y Editar";
             this.buttonBuscRut.UseVisualStyleBackColor = false;
+            this.buttonBuscRut.Click += new System.EventHandler(this.buttonBuscRut_Click);
             // 
             // buttonActRut
             // 

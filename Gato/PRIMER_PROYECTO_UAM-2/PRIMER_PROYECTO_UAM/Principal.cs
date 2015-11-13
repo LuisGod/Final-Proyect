@@ -64,13 +64,13 @@ namespace PRIMER_PROYECTO_UAM
 
         }
 
-<<<<<<< HEAD
+
         private void btnsolicitud_Click(object sender, EventArgs e)
         {
             Solicitud_servicio frmsolicitud = new Solicitud_servicio();
             frmsolicitud.ShowDialog();
+        }
 
-=======
         private void buttonREGISTRUT_Click(object sender, EventArgs e)
         {
             Agrega_Ruta agrrut = new Agrega_Ruta();
@@ -81,7 +81,7 @@ namespace PRIMER_PROYECTO_UAM
         {
             Elimina_Ruta eliminrut = new Elimina_Ruta();
             eliminrut.ShowDialog();
->>>>>>> origin/master
+
         }
 
         }

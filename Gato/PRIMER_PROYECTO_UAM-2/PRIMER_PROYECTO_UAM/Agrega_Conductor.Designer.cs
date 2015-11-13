@@ -237,7 +237,7 @@
             // 
             this.buttonbuscareditar.BackColor = System.Drawing.Color.Tomato;
             this.buttonbuscareditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonbuscareditar.Location = new System.Drawing.Point(310, 500);
+            this.buttonbuscareditar.Location = new System.Drawing.Point(311, 500);
             this.buttonbuscareditar.Name = "buttonbuscareditar";
             this.buttonbuscareditar.Size = new System.Drawing.Size(109, 29);
             this.buttonbuscareditar.TabIndex = 22;

@@ -22,9 +22,9 @@ namespace PRIMER_PROYECTO_UAM
             bool result;
 
             RutasBE rutasbe = new RutasBE();
-            rutasbe.Ruta = textBoxRutDesac.Text;
-
+           
             RutasController controler = new RutasController();
+
             if (result = controler.EliminaRuta(rutasbe))
             {
                 MessageBox.Show("Ruta Eliminada con Exito");
@@ -41,6 +41,16 @@ namespace PRIMER_PROYECTO_UAM
             {
                 this.Close();
             }
+        }
+
+        private void Elimina_Ruta_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

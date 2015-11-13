@@ -139,6 +139,43 @@ namespace PRIMER_PROYECTO_UAM
 
             return listaResult;
         }
-       
+
+        public List<RutasBE> VER_RUTA()
+        {
+
+            RutasBE rutasBE;
+            List<RutasBE> listaResulta = new List<RutasBE>();
+
+            Conexion myConnection = new Conexion();
+            SqlConnection conexion = myConnection.CreateConnection();
+            SqlCommand comando = myConnection.CreateCommand(conexion);
+            SqlDataReader rutas;
+
+            comando.CommandText = "VER_RUTA";
+            comando.CommandType = CommandType.StoredProcedure;
+
+
+            conexion.Open();
+
+            rutas = comando.ExecuteReader();
+            while (rutas.Read())
+            {
+                rutasBE = new RutasBE();
+
+                rutasBE.Ruta = rutas["RUTA"].ToString();
+               
+               
+
+
+                listaResulta.Add(rutasBE);
+
+            }
+
+            conexion.Close();
+
+            return listaResulta;
+
+        }
+
     }
 }

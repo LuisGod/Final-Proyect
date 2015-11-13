@@ -118,6 +118,7 @@
     <Compile Include="FactoryMethod\Rutas%28Creator%29.cs" />
     <Compile Include="RutasBE.cs" />
     <Compile Include="RutasController.cs" />
+    <Compile Include="SolicitudBE.cs" />
     <Compile Include="SolicitudController.cs" />
     <Compile Include="Solicitud_servicio.cs">
       <SubType>Form</SubType>

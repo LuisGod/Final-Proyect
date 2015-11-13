@@ -10,44 +10,38 @@ namespace PRIMER_PROYECTO_UAM
 {
     public class SolicitudController
     {
-        public List<ConductorBE> VERCHOFER()
-        {
 
-            ConductorBE conductorBE;
-            List<ConductorBE> listaResulta = new List<ConductorBE>();
+        public static ConductorBE ObtenerConductor(int pPlaca)
+        {
+            ConductorBE pConductor = new ConductorBE();
 
             Conexion myConnection = new Conexion();
             SqlConnection conexion = myConnection.CreateConnection();
-            SqlCommand comando = myConnection.CreateCommand(conexion);
-            SqlDataReader conductor;
-
-            comando.CommandText = "VERCHOFER";
-            comando.CommandType = CommandType.StoredProcedure;
-
+            SqlCommand comando = new SqlCommand(String.Format("SELECT PLACA, AñO, COLOR, NOMBRES,APELLIDOS, DNI, EDAD, DIRECCION, PROVINCIA FROM CONDUCTOR where PLACA ='{0}'", pPlaca), conexion);
+            SqlDataReader cconductor;
 
             conexion.Open();
 
-            conductor = comando.ExecuteReader();
-            while (conductor.Read())
+            cconductor = comando.ExecuteReader();
+            while (cconductor.Read())
             {
-                conductorBE = new ConductorBE();
 
+                pConductor.Placa = cconductor.GetString(0);
+                pConductor.Año = cconductor.GetString(1);
+                pConductor.Color = cconductor.GetString(2);
+                pConductor.Nombres = cconductor.GetString(3);
+                pConductor.Apellidos = cconductor.GetString(4);
+                pConductor.DNI = cconductor.GetString(5);
+                pConductor.Edad = cconductor.GetString(6);
+                pConductor.Direccion = cconductor.GetString(7);
+                pConductor.Provincia = cconductor.GetString(8);
 
-                conductorBE.Nombres = conductor["NOMBRES"].ToString();
-                conductorBE.Apellidos = conductor["APELLIDOS"].ToString();
-                
-                //conductorBE.ID= int.Parse(conductor["ID"].ToString());
-                //conductorBE.Placa = conductor["PLACA"].ToString();
-
-                listaResulta.Add(conductorBE);
 
             }
 
             conexion.Close();
-
-            return listaResulta;
+            return pConductor;
 
         }
-
     }
 }

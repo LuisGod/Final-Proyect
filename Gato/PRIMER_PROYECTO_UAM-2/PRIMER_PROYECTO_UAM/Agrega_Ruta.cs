@@ -41,5 +41,10 @@ namespace PRIMER_PROYECTO_UAM
                 MessageBox.Show("La Insercion ha Fallado");
             }
         }
+
+        private void buttonBuscRut_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

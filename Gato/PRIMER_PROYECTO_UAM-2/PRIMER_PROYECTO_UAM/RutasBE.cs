@@ -17,7 +17,7 @@ namespace PRIMER_PROYECTO_UAM
             set { ruta = value; }
         }
 
-        private string distanciakm;
+        private string  distanciakm;
 
         public string Distanciakm
         {
@@ -25,7 +25,7 @@ namespace PRIMER_PROYECTO_UAM
             set { distanciakm = value; }
         }
 
-        private string monto;
+        private string  monto;
 
         public string Monto
         { 

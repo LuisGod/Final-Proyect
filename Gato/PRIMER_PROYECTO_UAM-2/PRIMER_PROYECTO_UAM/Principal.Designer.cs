@@ -38,11 +38,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.buttonREGISTRUT = new System.Windows.Forms.Button();
             this.buttonELIMRUT = new System.Windows.Forms.Button();
-<<<<<<< HEAD
+
             this.btnsolicitud = new System.Windows.Forms.Button();
-=======
+
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
->>>>>>> origin/master
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
