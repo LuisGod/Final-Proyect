@@ -59,6 +59,11 @@ namespace PRIMER_PROYECTO_UAM
             montcond.ShowDialog();
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         }
     }
 
