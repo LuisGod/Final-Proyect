@@ -9,20 +9,28 @@ namespace PRIMER_PROYECTO_UAM
     class RutasBE
     {
 
-        private string rUTA;
+        private string ruta;
 
-        public string RUTA
+        public string Ruta
         {
-            get { return rUTA; }
-            set { rUTA = value; }
+            get { return ruta; }
+            set { ruta = value; }
         }
 
-        private int dISTANCIAKM;
+        private string distanciakm;
 
-        public int DISTANCIAKM
+        public string Distanciakm
         {
-            get { return dISTANCIAKM; }
-            set { dISTANCIAKM = value; }
+            get { return distanciakm; }
+            set { distanciakm = value; }
+        }
+
+        private string monto;
+
+        public string Monto
+        { 
+            get {return monto ;} 
+            set {monto = value ;} 
         }
     }
 }

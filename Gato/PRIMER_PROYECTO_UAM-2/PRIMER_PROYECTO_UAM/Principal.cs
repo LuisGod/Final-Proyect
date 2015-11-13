@@ -64,6 +64,18 @@ namespace PRIMER_PROYECTO_UAM
 
         }
 
+        private void buttonREGISTRUT_Click(object sender, EventArgs e)
+        {
+            Agrega_Ruta agrrut = new Agrega_Ruta();
+            agrrut.ShowDialog();
+        }
+
+        private void buttonELIMRUT_Click(object sender, EventArgs e)
+        {
+            Elimina_Ruta eliminrut = new Elimina_Ruta();
+            eliminrut.ShowDialog();
+        }
+
         }
     }
 
