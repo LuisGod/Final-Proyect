@@ -35,7 +35,7 @@ namespace PRIMER_PROYECTO_UAM
 
                 provinciaBE.IDPROVINCIAS = int.Parse(provincias["IDPROVINCIAS"].ToString());
                 provinciaBE.PROVINCIA = provincias["PROVINCIA"].ToString();
-
+               
 
                 listaResulta.Add(provinciaBE);
 

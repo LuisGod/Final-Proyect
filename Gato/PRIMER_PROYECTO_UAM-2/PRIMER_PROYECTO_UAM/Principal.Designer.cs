@@ -39,6 +39,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.buttonREGISTRUT = new System.Windows.Forms.Button();
             this.buttonELIMRUT = new System.Windows.Forms.Button();
+            this.btnsolicitud = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +59,7 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Coral;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, -2);
+            this.label1.Location = new System.Drawing.Point(12, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(817, 87);
             this.label1.TabIndex = 1;
@@ -167,12 +168,23 @@
             this.buttonELIMRUT.Text = "ELIMINAR RUTAS";
             this.buttonELIMRUT.UseVisualStyleBackColor = false;
             // 
+            // btnsolicitud
+            // 
+            this.btnsolicitud.Location = new System.Drawing.Point(216, 250);
+            this.btnsolicitud.Name = "btnsolicitud";
+            this.btnsolicitud.Size = new System.Drawing.Size(156, 42);
+            this.btnsolicitud.TabIndex = 12;
+            this.btnsolicitud.Text = "SOLICITUD SERVICIO";
+            this.btnsolicitud.UseVisualStyleBackColor = true;
+            this.btnsolicitud.Click += new System.EventHandler(this.btnsolicitud_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
             this.ClientSize = new System.Drawing.Size(819, 435);
+            this.Controls.Add(this.btnsolicitud);
             this.Controls.Add(this.buttonELIMRUT);
             this.Controls.Add(this.buttonREGISTRUT);
             this.Controls.Add(this.button2);
@@ -205,5 +217,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button buttonREGISTRUT;
         private System.Windows.Forms.Button buttonELIMRUT;
+        private System.Windows.Forms.Button btnsolicitud;
     }
 }

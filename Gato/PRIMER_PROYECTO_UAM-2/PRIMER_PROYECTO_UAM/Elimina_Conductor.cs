@@ -40,6 +40,11 @@ namespace PRIMER_PROYECTO_UAM
             }
         }
 
+        private void Elimina_Conductor_Load(object sender, EventArgs e)
+        {
+
+        }
+
 
     }
 }

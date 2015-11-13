@@ -16,5 +16,24 @@ namespace PRIMER_PROYECTO_UAM
         {
             InitializeComponent();
         }
+
+        private void Solicitud_servicio_Load(object sender, EventArgs e)
+        {
+             SolicitudController sc= new SolicitudController();
+            List<ConductorBE> listaP = new List<ConductorBE>();
+            SolicitudController Conductorcontrola = new SolicitudController();
+            listaP = Conductorcontrola.VERCHOFER();
+
+            BindingSource  chofersourse = new BindingSource();
+            chofersourse.DataSource = listaP;
+            cmbconductor.DataSource =  chofersourse;
+            cmbconductor.DisplayMember = "NOMBRES";
+         
+                  
+           
+           
+
+          cmbconductor.ValueMember = "ID";
+        }
     }
 }

@@ -64,6 +64,13 @@ namespace PRIMER_PROYECTO_UAM
 
         }
 
+        private void btnsolicitud_Click(object sender, EventArgs e)
+        {
+            Solicitud_servicio frmsolicitud = new Solicitud_servicio();
+            frmsolicitud.ShowDialog();
+
+        }
+
         }
     }
 

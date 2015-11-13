@@ -99,6 +99,7 @@
     <Compile Include="ProvinciaController.cs" />
     <Compile Include="RutasBE.cs" />
     <Compile Include="RutasController.cs" />
+    <Compile Include="SolicitudController.cs" />
     <Compile Include="Solicitud_servicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +143,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Solicitud_servicio.resx">
+      <DependentUpon>Solicitud_servicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ver_Eliminar.resx">
       <DependentUpon>Ver_Eliminar.cs</DependentUpon>
     </EmbeddedResource>

@@ -88,6 +88,7 @@
             this.Controls.Add(this.label2);
             this.Name = "Elimina_Conductor";
             this.Text = "Elimina_Conductor";
+            this.Load += new System.EventHandler(this.Elimina_Conductor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
