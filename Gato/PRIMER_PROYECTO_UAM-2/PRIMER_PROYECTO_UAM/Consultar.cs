@@ -158,7 +158,7 @@ namespace PRIMER_PROYECTO_UAM
                 SqlConnection conexion = myconexion.CreateConnection();
 
                 conexion.Open();
-                SqlCommand cmd = new SqlCommand("select * from CLIENTE where DNI= @Clav", conexion);
+                SqlCommand cmd = new SqlCommand("select * from CLIENTE where APELLIDOS= @Clav", conexion);
                 cmd.Parameters.AddWithValue("@Clav", txtbuscarcliente.Text);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
 
@@ -261,6 +261,7 @@ namespace PRIMER_PROYECTO_UAM
             txtdireccion.Enabled = false;
             cmbprovincia.Enabled = false;
             txtbuscarcliente.Enabled = true;
+            cmbcedula.Enabled = true;
 
         }
 
@@ -271,13 +272,7 @@ namespace PRIMER_PROYECTO_UAM
 
         private void btnedit_Click(object sender, EventArgs e)
         {
-            //EditarClient();
-
-
-            //txtnombre.Enabled = false;
-            //txtapellido.Enabled = false;
-            //txtdireccion.Enabled = false;
-            //cmbprovincia.Enabled = false;
+            
 
         }
 

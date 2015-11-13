@@ -119,6 +119,7 @@ namespace PRIMER_PROYECTO_UAM
         {
 
             ver.eliminar(dataeliminar);
+            txtcedula.Clear();
         }
 
         private void label1_Click(object sender, EventArgs e)

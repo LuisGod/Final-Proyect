@@ -33,11 +33,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cmbcedula = new System.Windows.Forms.ComboBox();
-            this.btneditar = new System.Windows.Forms.Button();
             this.txtbuscarcliente = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btneditar = new System.Windows.Forms.Button();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtapellido = new System.Windows.Forms.TextBox();
             this.txtdireccion = new System.Windows.Forms.TextBox();
@@ -45,10 +46,9 @@
             this.btnbuscar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.picfoto3 = new System.Windows.Forms.PictureBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picfoto3)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picfoto3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -98,15 +98,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BUSQUEDA ESTUDIANTE";
             // 
-            // label7
+            // groupBox2
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Coral;
-            this.label7.Location = new System.Drawing.Point(412, 52);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(10, 13);
-            this.label7.TabIndex = 17;
-            this.label7.Text = ".";
+            this.groupBox2.Controls.Add(this.cmbcedula);
+            this.groupBox2.Controls.Add(this.txtbuscarcliente);
+            this.groupBox2.Location = new System.Drawing.Point(3, 16);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(330, 44);
+            this.groupBox2.TabIndex = 17;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Consultar";
             // 
             // cmbcedula
             // 
@@ -120,18 +121,6 @@
             this.cmbcedula.Size = new System.Drawing.Size(72, 21);
             this.cmbcedula.TabIndex = 7;
             this.cmbcedula.SelectedIndexChanged += new System.EventHandler(this.cmbcedula_SelectedIndexChanged_1);
-            // 
-            // btneditar
-            // 
-            this.btneditar.BackColor = System.Drawing.Color.Coral;
-            this.btneditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btneditar.Location = new System.Drawing.Point(377, 151);
-            this.btneditar.Name = "btneditar";
-            this.btneditar.Size = new System.Drawing.Size(94, 27);
-            this.btneditar.TabIndex = 11;
-            this.btneditar.Text = "Editar Datos";
-            this.btneditar.UseVisualStyleBackColor = false;
-            this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
             // txtbuscarcliente
             // 
@@ -150,6 +139,29 @@
             this.label6.Size = new System.Drawing.Size(491, 292);
             this.label6.TabIndex = 16;
             this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Blue;
+            this.label7.Location = new System.Drawing.Point(480, 216);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(10, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = ".";
+            this.label7.Visible = false;
+            // 
+            // btneditar
+            // 
+            this.btneditar.BackColor = System.Drawing.Color.Coral;
+            this.btneditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btneditar.Location = new System.Drawing.Point(377, 151);
+            this.btneditar.Name = "btneditar";
+            this.btneditar.Size = new System.Drawing.Size(94, 27);
+            this.btneditar.TabIndex = 11;
+            this.btneditar.Text = "Editar Datos";
+            this.btneditar.UseVisualStyleBackColor = false;
+            this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
             // txtnombre
             // 
@@ -213,23 +225,12 @@
             this.picfoto3.BackColor = System.Drawing.Color.Blue;
             this.picfoto3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picfoto3.Image = global::PRIMER_PROYECTO_UAM.Properties.Resources.contact;
-            this.picfoto3.Location = new System.Drawing.Point(278, 207);
+            this.picfoto3.Location = new System.Drawing.Point(278, 216);
             this.picfoto3.Name = "picfoto3";
-            this.picfoto3.Size = new System.Drawing.Size(213, 186);
+            this.picfoto3.Size = new System.Drawing.Size(213, 177);
             this.picfoto3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picfoto3.TabIndex = 14;
             this.picfoto3.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.cmbcedula);
-            this.groupBox2.Controls.Add(this.txtbuscarcliente);
-            this.groupBox2.Location = new System.Drawing.Point(3, 16);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(330, 44);
-            this.groupBox2.TabIndex = 17;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Consultar";
             // 
             // Consultar
             // 
@@ -255,9 +256,9 @@
             this.Text = "Consultar";
             this.Load += new System.EventHandler(this.Consultar_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picfoto3)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picfoto3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

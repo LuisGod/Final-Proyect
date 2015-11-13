@@ -230,8 +230,8 @@ namespace PRIMER_PROYECTO_UAM
 
             Conexion myConnection = new Conexion();
             SqlConnection conexion = myConnection.CreateConnection();
-            SqlCommand comando = new SqlCommand(string.Format("UPDATE CONDUCTOR set AÑO='{0}', COLOR='{1}', NOMBRES='{2}', APELLIDOS='{3}', DNI='{4}', EDAD='{5}', DIRECCION='{6}',PROVINCIA='{7}' where PLACA={8}",
-                mConductor.Año, mConductor.Color, mConductor.Nombres, mConductor.Apellidos, mConductor.DNI,mConductor.Edad,mConductor.Direccion,mConductor.Provincia,mConductor.Placa), conexion);
+            SqlCommand comando = new SqlCommand(string.Format("UPDATE CONDUCTOR set AÑO ='{0}', COLOR ='{1}', NOMBRES ='{2}', APELLIDOS ='{3}', DNI ='{4}', EDAD='{5}', DIRECCION='{6}',PROVINCIA='{7}' where PLACA={8}",
+            mConductor.Año, mConductor.Color, mConductor.Nombres, mConductor.Apellidos, mConductor.DNI,mConductor.Edad,mConductor.Direccion,mConductor.Provincia,mConductor.Placa), conexion);
 
             conexion.Open();
             retorno = comando.ExecuteNonQuery();

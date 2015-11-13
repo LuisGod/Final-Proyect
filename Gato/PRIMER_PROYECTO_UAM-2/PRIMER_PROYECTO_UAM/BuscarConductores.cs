@@ -40,7 +40,7 @@ namespace PRIMER_PROYECTO_UAM
                     this.Close();
                 }
                 else
-                    MessageBox.Show("debe de seleccionar una fila");
+                    MessageBox.Show("Debe de seleccionar una fila");
             }
 
         }

@@ -96,7 +96,8 @@ namespace PRIMER_PROYECTO_UAM
             pConduct.Edad = numericUpDown1.Text.Trim();
             pConduct.Direccion = textdirec.Text.Trim();
             pConduct.Provincia = comboprovin.Text.Trim();
-            pConduct.Placa = conductorActual.Placa;
+          
+          // pConduct.Placa = conductorActual.Placa;
 
 
 

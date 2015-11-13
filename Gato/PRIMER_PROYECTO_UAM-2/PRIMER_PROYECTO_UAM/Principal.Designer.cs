@@ -106,7 +106,7 @@
             // 
             this.btnrgscondu.BackColor = System.Drawing.Color.Coral;
             this.btnrgscondu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnrgscondu.Location = new System.Drawing.Point(6, 30);
+            this.btnrgscondu.Location = new System.Drawing.Point(16, 31);
             this.btnrgscondu.Name = "btnrgscondu";
             this.btnrgscondu.Size = new System.Drawing.Size(156, 40);
             this.btnrgscondu.TabIndex = 7;
@@ -118,7 +118,7 @@
             // 
             this.buttonELIMCOND.BackColor = System.Drawing.Color.Coral;
             this.buttonELIMCOND.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonELIMCOND.Location = new System.Drawing.Point(6, 77);
+            this.buttonELIMCOND.Location = new System.Drawing.Point(16, 77);
             this.buttonELIMCOND.Name = "buttonELIMCOND";
             this.buttonELIMCOND.Size = new System.Drawing.Size(156, 40);
             this.buttonELIMCOND.TabIndex = 8;
@@ -130,7 +130,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Coral;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(7, 123);
+            this.button2.Location = new System.Drawing.Point(16, 123);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 45);
             this.button2.TabIndex = 9;
@@ -142,7 +142,7 @@
             // 
             this.buttonREGISTRUT.BackColor = System.Drawing.Color.Coral;
             this.buttonREGISTRUT.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonREGISTRUT.Location = new System.Drawing.Point(6, 31);
+            this.buttonREGISTRUT.Location = new System.Drawing.Point(19, 31);
             this.buttonREGISTRUT.Name = "buttonREGISTRUT";
             this.buttonREGISTRUT.Size = new System.Drawing.Size(156, 40);
             this.buttonREGISTRUT.TabIndex = 10;
@@ -154,7 +154,7 @@
             // 
             this.buttonELIMRUT.BackColor = System.Drawing.Color.Coral;
             this.buttonELIMRUT.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonELIMRUT.Location = new System.Drawing.Point(6, 77);
+            this.buttonELIMRUT.Location = new System.Drawing.Point(19, 77);
             this.buttonELIMRUT.Name = "buttonELIMRUT";
             this.buttonELIMRUT.Size = new System.Drawing.Size(156, 40);
             this.buttonELIMRUT.TabIndex = 11;
@@ -166,7 +166,7 @@
             // 
             this.btnsolicitud.BackColor = System.Drawing.Color.Coral;
             this.btnsolicitud.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnsolicitud.Location = new System.Drawing.Point(6, 126);
+            this.btnsolicitud.Location = new System.Drawing.Point(19, 126);
             this.btnsolicitud.Name = "btnsolicitud";
             this.btnsolicitud.Size = new System.Drawing.Size(156, 42);
             this.btnsolicitud.TabIndex = 12;
