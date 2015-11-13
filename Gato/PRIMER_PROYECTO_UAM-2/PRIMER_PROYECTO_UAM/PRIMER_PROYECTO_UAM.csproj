@@ -99,6 +99,12 @@
     <Compile Include="ProvinciaController.cs" />
     <Compile Include="RutasBE.cs" />
     <Compile Include="RutasController.cs" />
+    <Compile Include="Solicitud_servicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solicitud_servicio.Designer.cs">
+      <DependentUpon>Solicitud_servicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ver_Eliminar.cs">
       <SubType>Form</SubType>
     </Compile>
