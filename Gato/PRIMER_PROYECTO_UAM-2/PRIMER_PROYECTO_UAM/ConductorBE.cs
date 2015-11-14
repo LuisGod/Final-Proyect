@@ -8,14 +8,7 @@ namespace PRIMER_PROYECTO_UAM
 {
     public class ConductorBE
     {
-
-        private int iD;
-
-        public int ID
-        {
-            get { return iD; }
-            set { iD = value; }
-        }
+               
         private string placa;
 
         public string Placa { get { return placa; } set { placa = value; } }

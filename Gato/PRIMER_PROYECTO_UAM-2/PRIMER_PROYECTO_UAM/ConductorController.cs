@@ -195,7 +195,7 @@ namespace PRIMER_PROYECTO_UAM
 
             Conexion myConnection = new Conexion();
             SqlConnection conexion = myConnection.CreateConnection();
-            SqlCommand comando = new SqlCommand(String.Format("SELECT PLACA, AñO, COLOR, NOMBRES,APELLIDOS, DNI, EDAD, DIRECCION, PROVINCIA FROM CONDUCTOR where PLACA ='{0}'", pPlaca), conexion);
+            SqlCommand comando = new SqlCommand(String.Format("SELECT PLACA, AÑO, COLOR, NOMBRES,APELLIDOS, DNI, EDAD, DIRECCION, PROVINCIA FROM CONDUCTOR where PLACA ='{0}'", pPlaca), conexion);
             SqlDataReader cconductor;
 
             conexion.Open();
@@ -203,7 +203,6 @@ namespace PRIMER_PROYECTO_UAM
             cconductor = comando.ExecuteReader();
             while (cconductor.Read())
             {
-
                 pConductor.Placa = cconductor.GetString(0);
                 pConductor.Año = cconductor.GetString(1);
                 pConductor.Color = cconductor.GetString(2);
